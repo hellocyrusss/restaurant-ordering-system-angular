@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Veg Burger",
+    "category": "Burgers",
+    "description": "Crispy veg patty, lettuce, mayo and cheese slice.",
+    "ingredients": ["Bun", "Veg Patty", "Cheese"],
+    "price": 149,
+    "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1619096252214-ef06c45683e3?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+
+  },
+  {
+    "id": 2,
+    "name": "Crispy Chicken Burger",
+    "category": "Burgers",
+    "description": "Golden fried chicken fillet, lettuce and mayo.",
+    "ingredients": ["Bun", "Chicken", "Sauce"],
+    "price": 199,
+     "isVeg": false,
+    "imageUrl": "https://images.unsplash.com/photo-1606755962773-d324e8a13086?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 3,
+    "name": "Paneer Tikka Burger",
+    "category": "Burgers",
+    "description": "Grilled paneer tikka, spicy sauce and onions.",
+    "ingredients": ["Bun", "Paneer", "Spices"],
+    "price": 189,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1603064752734-4c48eff53d05?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 4,
+    "name": "Peri Peri Fries",
+    "category": "Fries",
+    "description": "Crispy fries tossed in peri-peri seasoning.",
+    "ingredients": ["Potato", "Seasoning"],
+    "price": 129,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 5,
+    "name": "Cheesy Fries",
+    "category": "Fries",
+    "description": "Loaded fries with creamy cheese sauce.",
+    "ingredients": ["Potato", "Cheese Sauce"],
+    "price": 159,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 6,
+    "name": "Chicken Popcorn",
+    "category": "Starters",
+    "description": "Bite-sized crunchy chicken popcorn.",
+    "ingredients": ["Chicken", "Flour", "Spices"],
+    "price": 179,
+     "isVeg": false,
+    "imageUrl": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 7,
+    "name": "Paneer Nuggets",
+    "category": "Starters",
+    "description": "Crispy paneer bites with spicy dip.",
+    "ingredients": ["Paneer", "Crumbs"],
+    "price": 169,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1625944525533-473f1a3d5b32?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 8,
+    "name": "Garlic Bread",
+    "category": "Starters",
+    "description": "Toasted bread with garlic butter & herbs.",
+    "ingredients": ["Bread", "Garlic", "Butter"],
+    "price": 139,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 9,
+    "name": "Margherita Pizza (Personal)",
+    "category": "Pizza",
+    "description": "Cheese-loaded classic margherita pizza.",
+    "ingredients": ["Base", "Cheese", "Sauce"],
+    "price": 249,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 10,
+    "name": "BBQ Chicken Pizza (Personal)",
+    "category": "Pizza",
+    "description": "BBQ chicken topping with extra cheese.",
+    "ingredients": ["Chicken", "BBQ Sauce"],
+    "price": 299,
+     "isVeg": false,
+    "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 11,
+    "name": "White Sauce Pasta",
+    "category": "Pasta",
+    "description": "Creamy white sauce pasta with herbs.",
+    "ingredients": ["Pasta", "Cream", "Herbs"],
+    "price": 219,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 12,
+    "name": "Chicken Alfredo Pasta",
+    "category": "Pasta",
+    "description": "Creamy Alfredo pasta with chicken chunks.",
+    "ingredients": ["Pasta", "Chicken", "Cream"],
+    "price": 269,
+     "isVeg": false,
+    "imageUrl": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 13,
+    "name": "Veg Wrap",
+    "category": "Wraps",
+    "description": "Grilled wrap with veggies and sauces.",
+    "ingredients": ["Wrap", "Veggies"],
+    "price": 159,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 14,
+    "name": "Chicken Shawarma Wrap",
+    "category": "Wraps",
+    "description": "Shawarma chicken with garlic mayo.",
+    "ingredients": ["Chicken", "Wrap", "Mayo"],
+    "price": 199,
+     "isVeg": false,
+    "imageUrl": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 15,
+    "name": "Classic Brownie",
+    "category": "Desserts",
+    "description": "Warm fudgy brownie (best with ice cream).",
+    "ingredients": ["Cocoa", "Butter"],
+    "price": 129,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 16,
+    "name": "Brownie with Ice Cream",
+    "category": "Desserts",
+    "description": "Warm brownie served with vanilla ice cream.",
+    "ingredients": ["Brownie", "Ice Cream"],
+    "price": 169,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 17,
+    "name": "Chocolate Milkshake",
+    "category": "Beverages",
+    "description": "Thick chocolate shake with whipped cream.",
+    "ingredients": ["Milk", "Chocolate"],
+    "price": 149,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 18,
+    "name": "Oreo Milkshake",
+    "category": "Beverages",
+    "description": "Oreo blended with ice cream and milk.",
+    "ingredients": ["Oreo", "Milk", "Ice Cream"],
+    "price": 169,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1582747816513-2f0ea0d1e04b?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  },
+  {
+    "id": 19,
+    "name": "Cold Coffee",
+    "category": "Beverages",
+    "description": "Chilled coffee with creamy froth.",
+    "ingredients": ["Coffee", "Milk"],
+    "price": 139,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 20,
+    "name": "Classic Mojito",
+    "category": "Beverages",
+    "description": "Refreshing mint & lemon soda drink.",
+    "ingredients": ["Mint", "Lemon", "Soda"],
+    "price": 129,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1621416954227-8b3f4eb9bacf?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 21,
+    "name": "Cheese Garlic Burger",
+    "category": "Burgers",
+    "description": "Cheese burger with garlic mayo and onions.",
+    "ingredients": ["Cheese", "Garlic Mayo"],
+    "price": 209,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": false
+  },
+  {
+    "id": 22,
+    "name": "Choco Lava Cake",
+    "category": "Desserts",
+    "description": "Molten chocolate lava cake.",
+    "ingredients": ["Chocolate", "Flour"],
+    "price": 149,
+     "isVeg": true,
+    "imageUrl": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=1000&q=80",
+    "isRecommended": true
+  }
+]
