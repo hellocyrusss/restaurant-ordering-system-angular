@@ -1,0 +1,74 @@
+<div class="page">
+  <h2>Checkout</h2>
+
+  <div class="layout">
+    <!-- ✅ LEFT FORM -->
+    <mat-card class="card">
+      <h3>Customer Details</h3>
+      <p class="muted">Fill your details to place the order.</p>
+
+      <form [formGroup]="checkoutForm" (ngSubmit)="placeOrder()">
+        <div class="form-grid">
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+          </mat-form-field>
+
+          <!-- ✅ Address full width -->
+          <mat-form-field appearance="outline" class="full">
+            <mat-label>Address</mat-label>
+            <textarea matInput rows="3" formControlName="address"></textarea>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput formControlName="phone" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Payment Method</mat-label>
+            <mat-select formControlName="paymentMethod">
+              <mat-option value="CARD">Card</mat-option>
+              <mat-option value="UPI">UPI</mat-option>
+              <mat-option value="COD">Cash on Delivery</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <!-- ✅ button full width -->
+        <button mat-raised-button color="primary" class="place-btn" type="submit">
+          Place Order
+        </button>
+      </form>
+    </mat-card>
+
+    <!-- ✅ RIGHT SUMMARY -->
+    <mat-card class="summary">
+      <h3>Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Items Total</span>
+        <b>₹{{ total }}</b>
+      </div>
+
+      <div class="summary-row">
+        <span>Delivery</span>
+        <b>FREE</b>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total Payable</span>
+        <b>₹{{ total }}</b>
+      </div>
+
+      <p class="muted small">
+        By placing this order, you agree to our terms & conditions.
+      </p>
+    </mat-card>
+  </div>
+</div>

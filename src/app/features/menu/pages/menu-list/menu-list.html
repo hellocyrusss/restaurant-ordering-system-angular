@@ -1,0 +1,64 @@
+<div class="page">
+  <!-- HERO HEADER -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Street Style Fast Food 🍔</h1>
+      <p>Fresh burgers, loaded fries, pizzas, desserts & shakes.</p>
+    </div>
+
+    <mat-form-field appearance="outline" class="category-select">
+      <mat-label>Category</mat-label>
+      <mat-select [(value)]="selectedCategory">
+        <mat-option *ngFor="let c of categories" [value]="c">
+          {{ c }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="menuItems.length === 0" class="loading">
+    Loading menu...
+  </div>
+
+  <!-- MENU GRID -->
+  <div class="grid">
+    <mat-card
+  class="menu-card"
+  [recommendedHighlight]="item.isRecommended ?? false"
+  *ngFor="let item of menuItems | categoryFilter:selectedCategory"
+  (click)="openDetail(item.id)"
+>
+  <!-- ✅ IMAGE FIRST -->
+  <div class="img-wrap">
+    <img
+      [src]="item.imageUrl"
+      [alt]="item.name"
+      (error)="item.imageUrl='https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80'"
+    />
+  </div>
+
+  <!-- ✅ CONTENT -->
+  <div class="content">
+    <h3 class="title">{{ item.name }}</h3>
+    <p class="subtitle">{{ item.category }}</p>
+
+    <p class="desc">{{ item.description }}</p>
+
+    <div class="bottom">
+      <div>
+        <div class="price">₹{{ item.price }}</div>
+        <div *ngIf="item.isRecommended" class="recommended-badge">
+          ⭐ Recommended
+        </div>
+      </div>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="$event.stopPropagation(); add(item)"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</mat-card>

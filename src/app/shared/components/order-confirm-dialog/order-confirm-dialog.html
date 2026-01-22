@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Confirm Order</h2>
+
+<div mat-dialog-content>
+  <p>Are you sure you want to place this order?</p>
+  <p><b>Total Amount:</b> ₹{{ data.total }}</p>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close="false">Cancel</button>
+  <button mat-raised-button color="primary" mat-dialog-close="true">
+    Confirm
+  </button>
+</div>

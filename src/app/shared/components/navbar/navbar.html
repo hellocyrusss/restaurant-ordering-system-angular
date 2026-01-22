@@ -1,0 +1,28 @@
+<mat-toolbar class="nav">
+  <div class="left">
+    <span class="brand">FoodieHub</span>
+
+    <a mat-button routerLink="/menu" routerLinkActive="active">Menu</a>
+
+    <!-- ✅ Cart near menu -->
+    <a mat-button routerLink="/cart" routerLinkActive="active">
+      <mat-icon
+        matBadge="{{ cartCount }}"
+        matBadgeColor="warn"
+        matBadgeOverlap="false"
+      >
+        shopping_cart
+      </mat-icon>
+      Cart
+    </a>
+
+    <a mat-button routerLink="/checkout" routerLinkActive="active">Checkout</a>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="right">
+    <a mat-button routerLink="/offers" routerLinkActive="active">Offers</a>
+    <a mat-button routerLink="/about" routerLinkActive="active">About</a>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,63 @@
+<div class="page">
+  <h2>Your Cart</h2>
+
+ <div *ngIf="cartItems.length === 0" class="empty">
+  <p>🛒 Your cart is empty</p>
+  <span class="empty-sub">Add something tasty from the menu 😋</span>
+
+  <div style="margin-top: 14px;">
+    <a mat-raised-button color="primary" routerLink="/menu">Browse Menu</a>
+  </div>
+</div>
+
+
+  <div *ngIf="cartItems.length > 0" class="cart-layout">
+    <!-- LEFT -->
+    <div class="cart-list">
+      <mat-card class="cart-item" *ngFor="let ci of cartItems">
+        <div class="row">
+          <div class="info">
+            <h3>{{ ci.item.name }}</h3>
+            <p class="muted">{{ ci.item.category }}</p>
+            <p class="price">₹{{ ci.item.price }}</p>
+          </div>
+
+          <div class="qty">
+            <button mat-stroked-button (click)="decrease(ci.item.id)">-</button>
+            <span>{{ ci.quantity }}</span>
+            <button mat-stroked-button (click)="increase(ci.item.id)">+</button>
+          </div>
+
+          <div class="subtotal">₹{{ ci.item.price * ci.quantity }}</div>
+
+          <button mat-stroked-button color="warn" (click)="remove(ci.item.id)">
+            Remove
+          </button>
+        </div>
+      </mat-card>
+    </div>
+
+    <!-- RIGHT SUMMARY -->
+    <mat-card class="summary">
+      <h3>Order Summary</h3>
+
+      <div class="summary-row">
+        <span>Total Items</span>
+        <b>{{ cartItems.length }}</b>
+      </div>
+
+      <div class="summary-row total">
+        <span>Total Amount</span>
+        <b>₹{{ getTotal() }}</b>
+      </div>
+
+      <button mat-raised-button color="primary" routerLink="/checkout">
+        Checkout
+      </button>
+
+      <button mat-button color="warn" (click)="clear()">
+        Clear Cart
+      </button>
+    </mat-card>
+  </div>
+</div>

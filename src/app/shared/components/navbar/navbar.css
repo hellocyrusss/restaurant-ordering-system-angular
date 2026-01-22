@@ -1,0 +1,48 @@
+
+.nav {
+  background: linear-gradient(90deg, #0d47a1, #1976d2) !important;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  margin-right: 20px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+a.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+mat-icon {
+  margin-right: 6px;
+}
+
+a {
+  color: white !important;
+  font-weight: 600;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+.brand {
+  color: #fff;
+}

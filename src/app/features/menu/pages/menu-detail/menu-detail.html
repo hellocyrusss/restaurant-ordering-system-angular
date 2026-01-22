@@ -1,0 +1,63 @@
+<div class="page">
+  <a routerLink="/menu" class="back-btn">← Back to Menu</a>
+
+  <div *ngIf="!item" class="loading">Loading item...</div>
+
+  <div *ngIf="item" class="detail-layout">
+    <!-- ✅ LEFT IMAGE -->
+    <div class="img-card">
+      <img
+        [src]="item.imageUrl"
+        [alt]="item.name"
+        (error)="item.imageUrl='https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80'"
+      />
+    </div>
+
+    <!-- ✅ RIGHT CONTENT -->
+    <mat-card class="detail-card">
+      <div class="top">
+        <div>
+          <div class="row">
+            <!-- ✅ Veg/NonVeg icon -->
+            <span
+              class="veg-dot"
+              [ngClass]="{ veg: item.isVeg, nonveg: !item.isVeg }"
+              title="{{ item.isVeg ? 'Veg' : 'Non-Veg' }}"
+            ></span>
+
+            <h2>{{ item.name }}</h2>
+          </div>
+
+          <p class="cat">{{ item.category }}</p>
+        </div>
+
+        <div class="price">₹{{ item.price }}</div>
+      </div>
+
+      <p class="desc">{{ item.description }}</p>
+
+      <!-- ✅ Recommended badge -->
+      <div *ngIf="item.isRecommended" class="badge">
+        ⭐ Recommended
+      </div>
+
+      <h3>Ingredients</h3>
+
+      <div class="chips">
+        <mat-chip-set>
+          <mat-chip *ngFor="let ing of item.ingredients">
+            {{ ing }}
+          </mat-chip>
+        </mat-chip-set>
+      </div>
+
+      <div class="actions">
+        <button mat-raised-button color="primary" (click)="addToCart()">
+          Add to Cart
+        </button>
+
+        <a mat-button routerLink="/cart">Go to Cart</a>
+      </div>
+    </mat-card>
+  </div>
+</div>
